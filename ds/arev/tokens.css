@@ -1,0 +1,287 @@
+/* Ocean Quiet Luxury — generated from tokens.json */
+:root, [data-theme="light"] {
+  --navy-950: #07172b; /* Primitive. Deepest navy: legal bar under the footer, overlays. Never in components. */
+  --navy-900: #0c2340; /* Primitive. Core brand navy. Never in components; use color-action-primary or color-bg-inverse. */
+  --navy-800: #1a3354; /* Primitive. Hover state for navy fills. */
+  --navy-700: #2e4768; /* Primitive. Reserve. */
+  --navy-500: #5a6f8c; /* Primitive. Muted navy for secondary icons. */
+  --navy-200: #c3cbd6; /* Primitive. Navy-tinted borders on light grounds. */
+  --navy-50: #eef1f5; /* Primitive. Rare cool tint (focus halos). */
+  --terracotta-800: #7f4220; /* Primitive. Accent pressed (white text 7.77:1). */
+  --terracotta-700: #8e4a25; /* Primitive. Accent hover (white text 6.65:1). */
+  --terracotta-650: #964f27; /* Primitive. AA-safe accent text: 5.46:1 on sand-50, 6.10:1 on white, 4.70:1 on sand-100. */
+  --terracotta-600: #a9592b; /* Primitive. Core accent fill and focus ring: white text 5.06:1; 4.53:1 on sand-50. */
+  --terracotta-500: #d17746; /* Primitive. AREV sunrise terracotta, the logo colour. 2.92:1 on sand-50: logo and large graphics only, never text on cream. 4.84:1 on navy-900. */
+  --terracotta-400: #e39a6e; /* Primitive. Accent text on navy (6.85:1 on navy-900). */
+  --terracotta-100: #f3dccb; /* Primitive. Pale tint. Reserve; never behind text that needs contrast with terracotta. */
+  --sand-300: #c2b6a5; /* Primitive. Strong divider / placeholder. 1.79:1 on sand-50: decorative only. */
+  --sand-200: #d4cabc; /* Primitive. Borders, skeletons. */
+  --sand-100: #e7e1da; /* Primitive. Alternate section surface. */
+  --sand-50: #f4f2ef; /* Primitive. Warm cream page canvas. */
+  --ink-900: #222222; /* Primitive. Primary text (14.24:1 on sand-50). */
+  --ink-800: #3d3d3d; /* Primitive. */
+  --ink-700: #454545; /* Primitive. Secondary headings. */
+  --ink-600: #4f4f4f; /* Primitive. Secondary body text. */
+  --ink-500: #666666; /* Primitive. Muted. */
+  --ink-400: #6d6d6d; /* Primitive. Captions; minimum AA on cream (4.63:1). */
+  --ink-200: #e0e0e0; /* Primitive. Neutral hairlines. */
+  --white: #ffffff; /* Primitive. Raised surfaces and text on navy only, never the page background. */
+  --black: #000000; /* Primitive. Overlays at alpha only, never text. */
+  --crimson-700: #ba0c2f; /* Primitive. Error. */
+  --olive-700: #4f7b35; /* Primitive. Success. */
+  --amber-700: #8a5a00; /* Primitive. Warning. */
+  --alpha-black-70: rgba(0,0,0,0.70); /* Primitive. Modal backdrop. */
+  --alpha-black-45: rgba(0,0,0,0.45); /* Primitive. Hero overlay. */
+  --alpha-black-40: rgba(0,0,0,0.40); /* Primitive. */
+  --alpha-black-0: rgba(0,0,0,0); /* Primitive. Transparent stop. */
+  --alpha-navy-60: rgba(12,35,64,0.60); /* Primitive. */
+  --alpha-white-80: rgba(255,255,255,0.80); /* Primitive. Secondary text on navy or imagery. */
+  --alpha-white-20: rgba(255,255,255,0.20); /* Primitive. Borders on navy. */
+  --color-bg-canvas: var(--sand-50); /* Page background, always; never pure white (R-C2). */
+  --color-bg-surface: var(--white); /* Cards, panels, forms, mega-menu, solid header. */
+  --color-bg-surface-alt: var(--sand-100); /* Alternating section band. */
+  --color-bg-surface-sunken: var(--sand-200); /* Image placeholders, skeletons. */
+  --color-bg-inverse: var(--navy-900); /* Dark bands, footer, booking bar. Never two navy bands next to each other (R-C7). */
+  --color-bg-inverse-deep: var(--navy-950); /* Legal bar under the footer. */
+  --color-bg-overlay-scrim: var(--alpha-black-45); /* Flat overlay over hero photography so white text passes 4.5:1. */
+  --color-bg-overlay-modal: var(--alpha-black-70); /* Modal backdrop. */
+  --color-text-primary: var(--ink-900); /* Body and most headings on canvas or surface. */
+  --color-text-brand: var(--navy-900); /* Hero and section display headings. */
+  --color-text-secondary: var(--ink-600); /* Supporting copy. */
+  --color-text-muted: var(--ink-400); /* Captions and metadata, 14px and up. */
+  --color-text-accent: var(--terracotta-650); /* Overlines, kickers, active nav. The only way to set terracotta text (R-C5). */
+  --color-text-accent-on-inverse: var(--terracotta-400); /* Overlines and footer headings on navy. */
+  --color-text-on-inverse: var(--white); /* Text on navy or imagery. */
+  --color-text-on-inverse-muted: var(--alpha-white-80); /* Secondary text on navy or imagery. */
+  --color-text-on-accent: var(--white); /* Text on a terracotta fill (5.06:1). */
+  --color-text-link: var(--ink-900); /* Inline links, underlined. */
+  --color-text-link-hover: var(--terracotta-650); /* Link hover. */
+  --color-action-primary: var(--navy-900); /* Primary button fill. */
+  --color-action-primary-hover: var(--navy-800); /* Primary button hover. */
+  --color-action-primary-pressed: var(--navy-950); /* Primary button pressed. */
+  --color-action-accent: var(--terracotta-600); /* The single most important conversion CTA per page (Reserve, Book). */
+  --color-action-accent-hover: var(--terracotta-700); /* Accent CTA hover. */
+  --color-action-accent-pressed: var(--terracotta-800); /* Accent CTA pressed. */
+  --color-brand-mark: var(--terracotta-500); /* The AREV logo on cream or navy. Logo and large brand graphics only, never text or UI. */
+  --color-action-disabled-bg: var(--sand-200); /* Disabled control fill. */
+  --color-action-disabled-text: var(--ink-400); /* Disabled control text. */
+  --color-border-subtle: var(--sand-200); /* Hairline dividers on canvas or surface. */
+  --color-border-default: var(--sand-300); /* Field underlines, chip borders (decorative strength). */
+  --color-border-strong: var(--ink-900); /* Focused field underline, chosen state. */
+  --color-border-inverse: var(--alpha-white-20); /* Borders on navy. */
+  --color-focus-ring: var(--terracotta-600); /* 2px focus ring on light grounds (4.53:1 on sand-50). */
+  --color-focus-ring-inverse: var(--white); /* Focus ring on navy or imagery. */
+  --color-feedback-error: var(--crimson-700); /* System errors only, never decoration (R-C6). */
+  --color-feedback-success: var(--olive-700); /* Confirmations only. */
+  --color-feedback-warning: var(--amber-700); /* Warnings only. */
+  --button-primary-bg: var(--color-action-primary); /* Primary button fill. */
+  --button-primary-bg-hover: var(--color-action-primary-hover); /* Primary button hover. */
+  --button-primary-text: var(--color-text-on-inverse); /* Primary button label. */
+  --button-accent-bg: var(--color-action-accent); /* Accent (conversion) button fill. */
+  --button-accent-bg-hover: var(--color-action-accent-hover); /* Accent button hover. */
+  --button-accent-text: var(--color-text-on-accent); /* Accent button label. */
+  --button-secondary-border: var(--color-action-primary); /* Outline button border; fills navy on hover. */
+  --button-secondary-text: var(--color-text-brand); /* Outline button label. */
+  --button-ghost-text: var(--color-text-primary); /* Ghost / text-link button. */
+  --button-ghost-text-hover: var(--color-text-accent); /* Ghost button hover. */
+  --nav-bg-solid: var(--color-bg-surface); /* Header after 80px of scroll and on inner pages. */
+  --nav-text-default: var(--color-text-primary); /* Nav links on the solid header. */
+  --nav-text-on-hero: var(--color-text-on-inverse); /* Nav links over the hero. */
+  --nav-text-active: var(--color-text-accent); /* Active nav item. */
+  --nav-indicator-color: var(--color-action-accent); /* 1px active underline. */
+  --card-overline-color: var(--color-text-accent); /* Card category overline. */
+  --card-title-color: var(--color-text-primary); /* Card title. */
+  --card-description-color: var(--color-text-secondary); /* Card description. */
+  --card-media-placeholder: var(--color-bg-surface-sunken); /* Card image placeholder. */
+  --itinerary-bg: var(--color-bg-surface); /* Itinerary row. */
+  --itinerary-bg-hover: var(--color-bg-canvas); /* Itinerary row hover. */
+  --itinerary-port-color: var(--color-text-brand); /* Itinerary place name. */
+  --footer-bg: var(--color-bg-inverse); /* Footer band. */
+  --footer-heading-color: var(--color-text-accent-on-inverse); /* Footer group overlines. */
+  --shadow-none: none; /* elevation-flat: cards and sections. */
+  --shadow-soft: 0 8px 32px rgba(12,35,64,0.08); /* elevation-floating: mega-menu, dropdowns. */
+  --shadow-float: 0 16px 48px rgba(12,35,64,0.12); /* elevation-modal. */
+}
+:root {
+  --space-0: 0px; /* Primitive. */
+  --space-1: 4px; /* Primitive. Hairline gaps. */
+  --space-2: 8px; /* Primitive. space-stack-sm on mobile; inline-sm. */
+  --space-3: 12px; /* Primitive. Button icon gap; stack-sm. */
+  --space-4: 16px; /* Primitive. Grid gap and stack-md on mobile. */
+  --space-5: 20px; /* Primitive. Page gutter on mobile. */
+  --space-6: 24px; /* Primitive. Card content padding-top; stack-md. */
+  --space-8: 32px; /* Primitive. Button padding-x; grid gap on desktop. */
+  --space-9: 36px; /* Primitive. */
+  --space-10: 40px; /* Primitive. Gutter on tablet; stack-lg desktop. */
+  --space-12: 48px; /* Primitive. stack-xl on tablet. */
+  --space-16: 64px; /* Primitive. Section rhythm on mobile; stack-xl desktop. */
+  --space-20: 80px; /* Primitive. Gutter on desktop; section rhythm on tablet. */
+  --space-24: 96px; /* Primitive. */
+  --space-30: 120px; /* Primitive. Section rhythm on desktop. */
+  --space-40: 160px; /* Primitive. Space after the hero on desktop. */
+  --space-50: 200px; /* Primitive. */
+  --space-section-y: 120px; /* Vertical rhythm between major sections. 120 desktop / 80 tablet / 64 mobile. Never reduced to fit content (R-W1). */
+  --space-section-y-hero-after: 160px; /* After the hero: 160 / 96 / 64. */
+  --space-gutter-page: 80px; /* Page side gutter: 80 / 40 / 20. */
+  --space-grid-gap: 32px; /* Grid gap: 32 / 24 / 16. */
+  --space-stack-xl: 64px; /* Section header to content grid (R-W2): 64 / 48 / 40. */
+  --space-stack-lg: 40px; /* 40 / 32 / 24. */
+  --space-stack-md: 24px; /* Overline → title → intro: 24 / 24 / 16. */
+  --space-stack-sm: 12px; /* Card text stack: 12 / 12 / 8. */
+  --space-inline-sm: 8px; /* Inline gaps. */
+  --space-inline-md: 16px; /* Inline gaps. */
+  --radius-0: 0px; /* Primitive. */
+  --radius-2: 2px; /* Primitive. */
+  --radius-4: 4px; /* Primitive. Observed control radius. */
+  --radius-6: 6px; /* Primitive. */
+  --radius-pill: 999px; /* Chips only. */
+  --radius-control: 4px; /* Buttons and controls only. */
+  --radius-surface: 0px; /* Cards, panels, modals: always square (R-V6). */
+  --radius-media: 0px; /* All imagery: always square (R-V6). */
+  --size-icon-sm: 16px; /* Line icons, 1–1.5px stroke. */
+  --size-icon-md: 20px; /* Line icons. */
+  --size-icon-lg: 24px; /* Line icons. */
+  --size-control-sm: 40px; /* Compact controls (not touch targets). */
+  --size-control-md: 44px; /* Minimum interactive target (R-A12); button-height-md. */
+  --size-control-lg: 48px; /* Form fields; button-height-lg. */
+  --size-header-desktop: 95px; /* Header height ≥ 900px. */
+  --size-header-mobile: 80px; /* Header height on mobile and tablet. */
+  --button-min-width: 160px; /* Filled and outline buttons. */
+  --hero-content-max-width: 760px; /* Hero text block. */
+  --chip-height: 28px; /* Tags and chips. */
+  --container-sm: 720px; /* Section headers, text-led blocks. */
+  --container-md: 1040px; /* Search panels, narrow layouts. */
+  --container-lg: 1280px; /* Reserve. */
+  --container-xl: 1440px; /* Content cap; hero and full-bleed bands stay edge to edge (R-R3). */
+  --bp-sm: 600px; /* Tablet: 8 columns, 40px gutter. */
+  --bp-md: 900px; /* Small desktop: 12 columns, condensed nav. */
+  --bp-lg: 1200px; /* Desktop: 80px gutter, full nav. */
+  --bp-xl: 1440px; /* Wide: content capped at container-xl. */
+  --bp-2xl: 1920px; /* Test width. */
+  --duration-120: 120ms; /* Reserve. */
+  --duration-240: 240ms; /* motion-micro: hovers, colour changes. Ease cubic-bezier(.2,0,0,1). */
+  --duration-400: 400ms; /* Reserve. */
+  --duration-800: 800ms; /* motion-reveal: reveals, image hover scale 1.04. Ease cubic-bezier(.25,.1,.25,1). */
+  --duration-1200: 1200ms; /* motion-hero: hero text reveal, 120ms stagger. Ease cubic-bezier(.65,0,.35,1). */
+  --z-base: 0; /* Default. */
+  --z-raised: 10; /* Raised content. */
+  --z-sticky: 100; /* Sticky header. */
+  --z-overlay: 900; /* Overlays. */
+  --z-modal: 1000; /* Modals. */
+  --z-toast: 1100; /* Toasts. */
+  --font-display: "WT Monarch Nova", "SangBleu Republic", "Cormorant Garamond", Times, serif;
+  --font-text: "SangBleu", "Newsreader", "Cormorant Garamond", Times, serif;
+  --font-sans: "Shapiro", "Jost", "Inter", Helvetica, Arial, sans-serif;
+  --text-type-display-xl: 400 88px/1 var(--font-display); /* Hero title. Mobile 48px: clamp(48px, 4vw + 32px, 88px). */
+  --text-type-display-lg: 400 64px/1.1 var(--font-display); /* Large statements. Mobile 36px. */
+  --text-type-heading-1: 400 48px/1.1 var(--font-display); /* Page titles. Mobile 32px. */
+  --text-type-heading-2: 400 36px/1.4 var(--font-display); /* Section titles in color-text-brand. Mobile 28px. */
+  --text-type-heading-3: 400 28px/1.3 var(--font-text); /* Sub-sections, modal titles. Mobile 24px. */
+  --text-type-heading-4: 400 24px/1.2 var(--font-text); /* Group titles, itinerary place names. Mobile 20px. */
+  --text-type-heading-5: 400 20px/1.4 var(--font-text); /* Card titles, price values. Mobile 18px. */
+  --text-type-body-lg: 300 18px/1.7 var(--font-sans); /* Intros, hero subtitle. Mobile 16px. Max 65ch. */
+  --text-type-body-md: 300 15px/1.7 var(--font-sans); /* Body copy. Max 65ch. */
+  --text-type-body-sm: 300 14px/1.4 var(--font-sans); /* Card metadata, descriptions. */
+  --text-type-caption: 350 12px/1.4 var(--font-sans); /* Captions, field labels, metadata. */
+  --text-type-overline: 350 12px/1.1 var(--font-sans); /* UPPERCASE kickers above titles, in color-text-accent. Mobile 11px. */
+  --text-type-button: 400 12px/1 var(--font-sans); /* UPPERCASE button labels. */
+  --text-type-nav: 350 12px/1.1 var(--font-sans); /* UPPERCASE desktop nav. Mobile menu: 16px, weight 250, sentence case. */
+}
+.type-display-xl {
+  font-family: var(--font-display);
+  font-size: 88px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.type-display-lg {
+  font-family: var(--font-display);
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.type-heading-1 {
+  font-family: var(--font-display);
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.type-heading-2 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.type-heading-3 {
+  font-family: var(--font-text);
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.type-heading-4 {
+  font-family: var(--font-text);
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.type-heading-5 {
+  font-family: var(--font-text);
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.type-body-lg {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+.type-body-md {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+.type-body-sm {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+.type-caption {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 350;
+  letter-spacing: 0.06em;
+}
+.type-overline {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 350;
+  letter-spacing: 0.11em;
+}
+.type-button {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.11em;
+}
+.type-nav {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 350;
+  letter-spacing: 0.11em;
+}
